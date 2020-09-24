@@ -1,0 +1,18 @@
+---
+title: Hello World !
+subtitle: A new Welcome vision of the World
+author:
+  - Frédéric Delorme
+date: 2020-09-23
+keywords: 
+  - java
+category: java
+description: |
+    This small how-to is an introduction to java project template, guiding java developer to abc for beginners. Starting with some simple steps, to get a solid project ready at build.
+lang: en-US
+cover-image: src/docs/resources/images/cover/en-welcome-in-java-front.jpg
+css: src/docs/resources/css/ebook-pub.css
+header: Welcoming developers
+footer: fredericDOTdelormeATgmailDOTcom [p]
+---
+
