@@ -13,27 +13,39 @@ A new part has been added about generating book from `src/docs`. But you will ne
 
 ```text
 ${projectfolder}/
- |_ lib
- |  |_ options.sh
- |  |_ stub.sh
- |_ src
- |  |_ main
- |     |_ java
- |     |  |_ my
- |     |     |_ program
- |     |        |_ package
- |     |           |_ MyMainClass.java
- |     |_ resources
- |        |_ res
- |        |  |_ images
- |        |  |  |_ mylogo.png
- |        |  |_ game.properties
- |_ .gitignore
- |_ build.sh
- |_ LICENSE
- |_ README.md
- (|_ pom.xml <= if any need to go back to too serious things :P )
+├── build.sh
+├── lib
+│   ├── options.txt
+│   ├── sources.lst
+│   └── stub.sh
+├── LICENSE
+├── pom.xml <= if any need to go back to too serious things :P
+├── README.md
+├── src
+│   ├── docs
+│   │   ├── 00-introduction.md
+│   │   ├── eisvogel.tex
+│   │   ├── metadata.yml
+│   │   └── resources
+│   │       ├── css
+│   │       │   └── ebook-pub.css
+│   │       └── images
+│   │           └── cover
+│   │               ├── en-welcome-in-java-back.jpg
+│   │               └── en-welcome-in-java-front.jpg
+│   └── main
+│       ├── java
+│       │   └── com
+│       │       └── snapgames
+│       │           └── sample
+│       │               └── HelloWorld.java
+│       └── resources
+│           └── res
+│               ├── messages_fr_FR.properties
+│               └── messages.properties
+└── target
 ```
+
 ## Configuration
 
 The first variables must be adapted to your needs:
@@ -52,6 +64,7 @@ Then just execute the following command line:
 ```bash
 $> build.sh a
 ```
+
 And a few seconds later, you'll got some beatifull `$PROGRAM_NAME.run` and `$PROGRAM_NAME.jar` file in the `target` directory. 
 
 Execute the `.run` file to start your well packaged jar file in an autorun format.
