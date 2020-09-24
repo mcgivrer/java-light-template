@@ -8,7 +8,7 @@ export PROGRAM_VERSION=1.0
 export PROGRAM_TITLE="HelloWorld"
 export AUTHOR_NAME="Frederic Delorme"
 export VENDOR_NAME="SnapGames"
-export MAINCLASS=com.snapgames.sample.HelloWorld
+export MAINCLASS=main.java.com.snapgames.sample.HelloWorld
 # pathes
 export SRC=src
 export LIBS=lib
@@ -40,12 +40,13 @@ function compile(){
 	echo "compile sources "
 	echo "> from : $SRC"
 	echo "> to   : $CLASSES"
+	rm -Rf $CLASSES/*
+	rm -Rf $LIBS/sources.lst
 	# prepare target
 	mkdir -p $CLASSES
 	# Compile class files
-	rm -Rf $CLASSES/*
 	echo "|_ 2. compile sources from '$SRC' ..."
-	find $SRC -name '*.java'  > $LIBS/sources.lst
+	find $SRC/main/java -name '*.java'  > $LIBS/sources.lst
 	javac @$LIBS/options.txt @$LIBS/sources.lst -cp $CLASSES $COMPILATION_OPTS
 	echo "   done."
 }
