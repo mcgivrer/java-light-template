@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Here is a java project template with `build.sh` script. It's now allow you to build any java project with the maven inspired file structure below. It is particularly adapted to very light machine : ARM architecture based ones a.k.a. RaspberryPi, OrangePi, BananaPi, etc ... or any simple projects.
+Here is a java project template with `build.sh` script. It's now allow you to build any java project with the maven inspired file structure below. It is particularly adapted to very light machine : ARM architecture based ones a.k.a. RaspberryPi, OrangePi, BananaPi, "AnythingPi" :), etc ... or any simple projects.
 
 It is using only `bash`, `javac`, `java`,`jar` and `git` command line instructions.
 For this created executable `.run` file run... just be sure that a [Java JDK](https://www.oracle.com/java/technologies/java-se-glance.html "Go to the Java source and choose your favorite flavour from 8 to 15 !") is installed and a correct `JAVA_HOME` is set.
