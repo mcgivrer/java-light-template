@@ -99,6 +99,8 @@ function help(){
 	echo "where :"
 	echo " - a|A|all     : Perform all following operations"
 	echo " - c|C|compile : Compile all sources project"
+	echo " - d|D|pdf     : generate PDF doc for the project"
+	echo " - e|E|ebook   : generate eBook doc for the project"
 	echo " - j|J|jar     : Build JAR with all resources"
 	echo " - w|W|wrap    : Build and wrap jar as a shell script"
 	echo " - s|S|sign    : Build and wrap signed jar as a shell script"
